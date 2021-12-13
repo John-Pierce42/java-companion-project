@@ -16,6 +16,11 @@ public class HomeController {
 	public String home() {
 		return "index";
 	}
+	
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	public String homeTest() {
+		return "index";
+	}
 
 	@RequestMapping(value = "/review", method = RequestMethod.GET)
 	public ModelAndView review() {
